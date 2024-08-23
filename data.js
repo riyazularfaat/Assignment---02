@@ -43,7 +43,7 @@ let dataItemsList = [
     },
     {
         "id": 8,
-        "name": "Yorkshire",
+        "name": "Healthy Breakfast",
         "price": 35.00,
         "img": "./image/2.png",
     },
@@ -61,13 +61,13 @@ let dataItemsList = [
     },
     {
         "id": 11,
-        "name": "Shomi rice",
+        "name": "Shomi Rice",
         "price": 17.00,
         "img": "./image/5.png",
     },
     {
         "id": 12,
-        "name": "Mushrom",
+        "name": "Mushrom Salad",
         "price": 45.00,
         "img": "./image/6.png",
     }

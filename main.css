@@ -14,6 +14,38 @@
     gap: 30px;
     cursor: pointer;
 }
+.cart{
+    display: flex;
+    gap: 15px;
+}
+#cart-count{
+    background-image: var(--primary-color);
+    height: 30px;
+    width: 30px;
+    color: var(--background-color);
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+}
+/* heading section end */
+
+/* search section start */
+.search-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.search{
+    display: flex;
+    gap: 20px;
+    padding: 0px 10px;
+    height: fit-content;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
 .searh-bar{
     display: flex;
     justify-content: space-between;
@@ -78,7 +110,7 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 .banner-right{
     width: 50%;
@@ -132,10 +164,24 @@
 }
 .banner-title{
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 50px;
 }
 .banner-title{
     margin-top: 30px;
+}
+#banner-desc-text{
+    width: 50%;
+    text-align: justify;
+}
+.banner-curve-arrow{
+    position: absolute;
+    top: 92%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+}
+.banner-curve-arrow img{
+    width: 80%;
+    height: 80%;
 }
 .order-section{
     display: flex;
@@ -151,6 +197,10 @@
     color: var(--background-color);
     border: none;
     cursor: pointer;
+}
+.order-btn:hover{
+    background-image: linear-gradient(#54f42877, #22eed3c9);
+    color: var(--primary-font);
 }
 .banner-right{
     width: 50%;
@@ -180,6 +230,9 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.075);
+}
+.address-details h1{
+    font-size: 30px;
 }
 .img{
     background-image: var(--primary-color);
@@ -254,6 +307,10 @@
     cursor: pointer;
     padding: 10px 20px;
 }
+.item-desc:hover{
+    background-image: linear-gradient(#54f42877, #22eed3c9);
+    color: var(--primary-font);
+}
 .item-rating-and-price p{
     text-align: right;
     padding: 10px;
@@ -269,13 +326,23 @@
     margin-left: 40%;
     cursor: pointer;
 }
+.item-card-btn:hover{
+    background-image: linear-gradient(#54f42877, #22eed3c9);    
+    color: var(--primary-font);
+}
 .item-card-btn button{
     background-image: var(--primary-color);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 20px;
     border: none;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     cursor: pointer;
+}
+.item-card-btn button:hover{
+    background-image: linear-gradient(#54f42877, #22eed3c9);    
+    color: var(--primary-font);
 }
 .item-card-btn h4{
     color: var(--background-color);
@@ -412,17 +479,20 @@
     color: var(--background-color);
     border-radius: 30px;
 }
+.sub-img{
+    width: 50%;
+}
 .sub-text{
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    max-width: 70%;
+    max-width: 50%;
     color: var(--background-color);
 }
 .sub-text h1{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     color: var(--background-color);
 }
@@ -458,6 +528,10 @@
     background-image: var(--primary-color);
     cursor: pointer;
 }
+.sub-btn:hover{
+    background-image: linear-gradient(#54f42877, #22eed3c9);    
+    color: var(--primary-font);
+}
 /* subscription section end  */
 /* -------------------------------------------------------------------- */
 /* footer section start */
@@ -484,6 +558,7 @@ footer{
 }
 .footer-desc{
     margin-top: 20px;
+    text-align: center;
 }
 .footer-detail p{
     font-size: 15px;
@@ -517,10 +592,6 @@ footer{
 .contact-email button{
     border: none;
     cursor: pointer;
-}
-.contact-email img:hover{
-    
-    background-color: aqua;
 }
 .contact-email input{
     border: none;
@@ -597,4 +668,35 @@ footer{
         width: 100%;
     }
     
+}
+
+@media (min-width: 576px) and (max-width: 1024px) {
+    .header-container{
+        justify-content: space-between;
+    }
+    .delivery{
+        width: 100%;
+        font-size: 12px;
+    }
+    .banner-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .banner-title{
+        font-size: 20px;
+        text-align: center;
+    }
+    .banner-left{
+        width: 100%;
+    }
+    .banner-right{
+        width: 100%;
+        align-items: center;
+    }
+    .address-details h1{
+        font-size: 20px;
+    }
+    .item-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="root.css">
-
+    
     <title>KP Food Deliver Service</title>
 </head>
 <body class="container">
@@ -14,8 +14,10 @@
             <img src="./image/logo.png" alt="Logo">
         </div>
         <div class="tab-bar">
-            <h1>Home</h1>
-            <h1>Cart</h1>
+            <a href="index.html"><h1>Home</h1></a>
+            <a href="#">
+                <h1>Cart</h1>
+            </a>
         </div>
         <div class="searh-bar">
             <div class="search">
@@ -51,8 +53,11 @@
                     <br> <span style="color: orange;">Delivery</span>
                     <br>In <span style="color: orange;">Your City</span></h1>
                 </div>
+                <div class="banner-curve-arrow">
+                    <img src="./image/Abstract.png" alt="">
+                </div>
                 <div class="banner-title">
-                    <p>"Bringing Your Favorite Meals Right to Your Doorstep – Fast,
+                    <p id="banner-desc-text">"Bringing Your Favorite Meals Right to Your Doorstep – Fast,
                      Fresh, and Delicious!"</p>
                 </div>
             </div>
@@ -138,7 +143,7 @@
                 <div class="item-title">
                     <div class="item-card-title">
                         <h1>Gyro Sandwhic</h1>
-                        <button class="item-desc">Add To Cart</button>
+                        <button onclick="add_to_cart()" class="item-desc">Add To Cart</button>
                     </div>
                     <div class="item-rating-and-price">
                         <p><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -156,7 +161,7 @@
                 <div class="item-title">
                     <div class="item-card-title">
                         <h1>Enchilade</h1>
-                        <button class="item-desc">Add To Cart</button>
+                        <button onclick="add_to_cart()" class="item-desc">Add To Cart</button>
                     </div>
                     <div class="item-rating-and-price">
                         <p><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -174,7 +179,7 @@
                 <div class="item-title">
                     <div class="item-card-title">
                         <h1>Green Beans</h1>
-                        <button class="item-desc">Add To Cart</button>
+                        <button onclick="add_to_cart()" class="item-desc">Add To Cart</button>
                     </div>
                     <div class="item-rating-and-price">
                         <p><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -192,7 +197,7 @@
                 <div class="item-title">
                     <div class="item-card-title">
                         <h1>Pizza</h1>
-                        <button class="item-desc">Add To Cart</button>
+                        <button onclick="add_to_cart()" class="item-desc">Add To Cart</button>
                     </div>
                     <div class="item-rating-and-price">
                         <p><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -210,7 +215,7 @@
                 <div class="item-title">
                     <div class="item-card-title">
                         <h1>Green Salad</h1>
-                        <button class="item-desc">Add To Cart</button>
+                        <button onclick="add_to_cart()" class="item-desc">Add To Cart</button>
                     </div>
                     <div class="item-rating-and-price">
                         <p><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -228,7 +233,7 @@
                 <div class="item-title">
                     <div class="item-card-title">
                         <h1>Chicken Pot Pie</h1>
-                        <button class="item-desc">Add To Cart</button>
+                        <button onclick="add_to_cart()" class="item-desc">Add To Cart</button>
                     </div>
                     <div class="item-rating-and-price">
                         <p><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -360,10 +365,10 @@
                         Fresh, and Delicious!"</p>
                 </div>
                 <div class="social-contacts">
-                    <a href="https://www.facebook.com/feed/"><img src="./image/fb.png" alt="facebook"/> </a>
-                    <a href="https://x.com/feed/"> <img src="./image/twitter.png" alt="twitter"> </a>
-                    <a href="https://www.instagram.com/feed/"><img src="./image/ig.png" alt="instragram"></a>
-                    <a href="https://www.linkedin.com/feed/"><img src="./image/lknd.png" alt="linkedIn"></a>
+                    <a href="https://www.facebook.com/feed/" target="_blank"><img src="./image/fb.png" alt="facebook"/> </a>
+                    <a href="https://x.com/feed/" target="_blank"> <img src="./image/twitter.png" alt="twitter"> </a>
+                    <a href="https://www.instagram.com/feed/" target="_blank"><img src="./image/ig.png" alt="instragram"></a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><img src="./image/lknd.png" alt="linkedIn"></a>
                 </div>
             </div>
             <div class="footer-logo">

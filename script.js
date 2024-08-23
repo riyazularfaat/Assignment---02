@@ -2,20 +2,19 @@ function contactHandle(event) {
     event.preventDefault();
 
     const email = event.target.email.value;
-    // console.log(email);
     
     const successMessage = document.getElementById('submissionSuccess');
-    // console.log(successMessage);
 
     if (email === '') {
-        alert('Please enter a valid email address');
+        const emailParagraph = document.createElement('p');
+        // alert('Please enter a valid email address');
+        emailParagraph.innerText = `Please enter a valid email address`;
+        successMessage.appendChild(emailParagraph);
     } else {
         const emailParagraph = document.createElement('p');
-        emailParagraph.innerText = `Email: ${email}`;
-        // console.log(emailParagraph);
+        emailParagraph.innerText = `Thanks for subscribing to our newsletter. Your email address "${email}" has been added to our mailing list.`;
 
         successMessage.appendChild(emailParagraph);
-        alert('Subcription is successful.');
     }
 }
 
@@ -32,34 +31,34 @@ document.addEventListener("DOMContentLoaded", function () {
             price: "$12.00"
         },
         {
-            title: "Green Salad",
-            imgSrc: "./image/salad.png",
+            title: "Healthy Breakfast",
+            imgSrc: "./image/2.png",
             rating: "5.0",
-            price: "$30.00"
+            price: "$35.00"
         },
         {
-            title: "Pizza",
-            imgSrc: "./image/pizza 02.png",
+            title: "Combo Food",
+            imgSrc: "./image/3.png",
             rating: "4.9",
-            price: "$40.00"
+            price: "$26.00"
         },
         {
-            title: "Green Beans",
-            imgSrc: "./image/mpi - 03.png",
+            title: "Fruit Juice",
+            imgSrc: "./image/4.png",
             rating: "4.8",
-            price: "$18.00"
+            price: "$11.50"
         },
         {
-            title: "Enchilade",
-            imgSrc: "./image/mpi - 02.png",
+            title: "Shomi Rice",
+            imgSrc: "./image/5.png",
             rating: "4.7",
-            price: "$15.00"
+            price: "$17.00"
         },
         {
-            title: "Chicken Pot Pie",
+            title: "Mushrom Salad",
             imgSrc: "./image/Chicken.png",
             rating: "4.9",
-            price: "$22.00"
+            price: "$45.00"
         }
     ];
 
@@ -108,49 +107,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+const shop = document.getElementById('item-cards')
 
+// let generateShop = () => {
+//      shop.innerHTML = dataItemsList.map((x) => {
+//              let { id, name, price, img } = x
+// //         return `
+// //                 <div class = "shop_item" id = product-id-${id}>
+// //                     <img src = "${img}" alt="" />
+// //                     <div class="product_info">
+// //                         <h5>${name}</h5>
+// //                     </div>
+// //                 </div>
+// //         `
+//      })
+//  }
 
+//  generateShop()
 
-// const additionalProducts = [
-//     { name: 'Pasta', rating: '⭐ 4.8', price: '$20.00', img: './image/mpi - 01.png' },
-//     { name: 'Tacos', rating: '⭐ 4.7', price: '$12.50', img: './image/mpi - 02.png' },
-//     { name: 'Burger', rating: '⭐ 5.0', price: '$17.00', img: './image/mpi - 03.png' },
-//     { name: 'Pizza', rating: '⭐ 4.9', price: '$30.00', img: './image/pizza 02.png' },
-//     { name: 'Caesar Salad', rating: '⭐ 4.9', price: '$14.50', img: './image/salad.salad.png' },
-//     { name: 'Chicken Pot Pie', rating: '⭐ 4.8', price: '$20.00', img: './image/Chicken.png' },
-// ];
-
-// const itemContainer = document.getElementById('item-cards');
-// const loadMoreBtn = document.getElementById('see-more');
-// const seeLessBtn = document.getElementById('see-less');
-// const originalCards = itemContainer.innerHTML;
-
-
-// loadMoreBtn.addEventListener('click', function () { 
-//     additionalProducts.forEach(image => {
-//         const itemDivImage = document.createElement('div');
-//         itemDivImage.classList.add('item-cards');
-//         itemDivImage.innerHTML = `
-//             <img src="${image.img}" alt="${image.name}">
-//             <h1>${image.name}</h1>
-//             <p>${image.price}</p>
-//             <p>${image.rating}</p>
-//             <button> Add To Cart </button>
-//         `;
-//         const computedStyles = window.getComputedStyle(itemContainer);
-//         itemContainer.style[image] = computedStyles.getPropertyValue(image);
-//         itemContainer.appendChild(itemDivImage);
-//     });
-
-//     loadMoreBtn.style.display = 'none';
-//     seeLessBtn.style.display = 'block';
-// });
-
-// seeLessBtn.addEventListener('click', function () {
-    
-//     itemContainer.innerHTML = originalCards;
-
-//     // Hide the "See Less" button and show the "See More" button
-//     seeLessBtn.style.display = 'none';
-//     loadMoreBtn.style.display = 'block';
-// });
+let add_to_cart = (id, name, price, img) => {
+    console.log(id);
+}
